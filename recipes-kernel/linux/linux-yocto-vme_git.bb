@@ -5,10 +5,11 @@ LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 inherit kernel
+require recipes-kernel/linux/linux-yocto.inc
 
 # Override SRC_URI in a copy of this recipe to point at a different source
 # tree if you do not want to build from Linus' tree.
-SRC_URI = "git://git.collabora.com/git/user/martyn/linux.git;branch=vme_test"
+SRC_URI = "git://git.collabora.com/git/user/martyn/linux.git;protocol=git;nocheckout=1;branch=vme_test"
 #SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc.git;branch=char-misc-next"
 
 SRC_URI += "file://defconfig"
