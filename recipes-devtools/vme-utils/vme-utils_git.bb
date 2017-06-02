@@ -11,3 +11,5 @@ S = "${WORKDIR}/git"
 
 SRCREV = "${AUTOREV}"
 
+PV = "git${SRCPV}"
+
