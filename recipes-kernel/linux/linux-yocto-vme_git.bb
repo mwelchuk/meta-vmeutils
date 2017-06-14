@@ -9,12 +9,14 @@ require recipes-kernel/linux/linux-yocto.inc
 
 # Override SRC_URI in a copy of this recipe to point at a different source
 # tree if you do not want to build from Linus' tree.
-SRC_URI = "git://git.collabora.com/git/user/martyn/linux.git;protocol=git;nocheckout=1;branch=vme_test"
+SRC_URI = "git://git.collabora.com/git/user/martyn/linux.git;protocol=git;nocheckout=1;branch=vme_test;machine=qemux86-64"
 #SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc.git;branch=char-misc-next"
 
-SRC_URI += "file://defconfig"
+SRC_URI += " file://defconfig "
 
-LINUX_VERSION ?= "4.10"
+KERNEL_FEATURES_remove_qemuall=" features/debug/printk.scc"
+
+LINUX_VERSION ?= "4.12-rc1"
 LINUX_VERSION_EXTENSION_append = "-driverdev"
 
 # Modify SRCREV to a different commit hash in a copy of this recipe to
