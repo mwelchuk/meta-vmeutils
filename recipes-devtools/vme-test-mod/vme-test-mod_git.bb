@@ -9,3 +9,5 @@ SRC_URI = "git://gitlab.collabora.com/vme/vme-test-mod.git;protocol=https"
 S = "${WORKDIR}/git"
 
 SRCREV="${AUTOREV}"
+
+PV = "git${SRCPV}"
