@@ -4,7 +4,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=12f884d2ae1ff87c09e5b7ccc2c4ca7e"
 
 inherit module
 
-SRC_URI = "git://git.collabora.com/git/vme/vme-test-mod.git"
+SRC_URI = "git://gitlab.collabora.com/vme/vme-test-mod.git;protocol=https"
 
 S = "${WORKDIR}/git"
 

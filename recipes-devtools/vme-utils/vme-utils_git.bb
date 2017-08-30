@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://vme_master.c;beginline=6;endline=9;md5=3c689b529fbe7f
 
 inherit autotools
 
-SRC_URI =  "git://git.collabora.com/git/vme/vme-utils.git"
+SRC_URI = "git://gitlab.collabora.com/vme/vme-utils.git;protocol=https"
 
 S = "${WORKDIR}/git"
 
