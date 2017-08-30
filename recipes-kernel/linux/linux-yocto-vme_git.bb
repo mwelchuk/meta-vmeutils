@@ -16,7 +16,9 @@ SRC_URI += " file://defconfig "
 
 KERNEL_FEATURES_remove_qemuall=" features/debug/printk.scc"
 
-LINUX_VERSION ?= "4.12-rc1"
+KERNEL_VERSION_SANITY_SKIP = "1" 
+
+LINUX_VERSION ?= "4.12"
 LINUX_VERSION_EXTENSION_append = "-driverdev"
 
 # Modify SRCREV to a different commit hash in a copy of this recipe to
