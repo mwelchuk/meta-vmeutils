@@ -9,7 +9,7 @@ require recipes-kernel/linux/linux-yocto.inc
 
 # Override SRC_URI in a copy of this recipe to point at a different source
 # tree if you do not want to build from Linus' tree.
-SRC_URI = "git://git.collabora.com/git/user/martyn/linux.git;protocol=git;nocheckout=1;branch=vme_test;machine=qemux86-64"
+SRC_URI = "git://gitlab.collabora.com/martyn/linux.git;protocol=https;nocheckout=1;branch=vme-testing;machine=qemux86-64"
 #SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc.git;branch=char-misc-next"
 
 SRC_URI += " file://defconfig "
