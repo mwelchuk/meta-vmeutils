@@ -27,7 +27,7 @@ LINUX_VERSION_EXTENSION_append = "-driverdev"
 #SRCREV_machine="64291f7db5bd8150a74ad2036f1037e6a0428df2"
 SRCREV_qemux86-64="${AUTOREV}"
 
-PV = "${LINUX_VERSION}+git${SRCPV}"
+PV = "${LINUX_VERSION}"
 
 # Override COMPATIBLE_MACHINE to include your machine in a copy of this recipe
 # file. Leaving it empty here ensures an early explicit build failure.
